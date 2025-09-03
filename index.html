@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Karriere · NovaWork</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Finde deinen nächsten Job bei NovaWork. Remote oder vor Ort. Jetzt bewerben und durchstarten.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#120d1c">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">⚡</span>
+        <span class="brand-name">NovaWork</span>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span class="visually-hidden">Menü öffnen</span>
+        ☰
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#vorteile">Vorteile</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#bewerben">Bewerben</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Arbeite an Projekten mit echtem Impact</h1>
+        <p class="hero-sub">
+          Wir kombinieren starke Produktvision mit moderner Engineering-Kultur. Finde deine Rolle – remote oder vor Ort.
+        </p>
+        <div class="hero-actions">
+          <a href="#jobs" class="btn primary">Offene Stellen</a>
+          <a href="#bewerben" class="btn ghost">Initiativ bewerben</a>
+        </div>
+      </div>
+      <figure class="hero-art" aria-hidden="true">
+        <img src="https://via.placeholder.com/640x400.png?text=Dein+neues+Team" alt="" loading="lazy">
+      </figure>
+    </section>
+  </header>
+
+  <main id="main" class="main">
+    <!-- Vorteile -->
+    <section id="vorteile" class="section" aria-labelledby="vorteile-heading">
+      <h2 id="vorteile-heading">Warum wir?</h2>
+      <ul class="features">
+        <li>
+          <h3>Flexible Work</h3>
+          <p>Remote-first mit optionalen Co-Work Tagen.</p>
+        </li>
+        <li>
+          <h3>Learning Budget</h3>
+          <p>Jährliches Weiterbildungsbudget + Mentoring.</p>
+        </li>
+        <li>
+          <h3>Modern Stack</h3>
+          <p>TypeScript, Edge-Architektur, Micro-Services.</p>
+        </li>
+        <li>
+          <h3>Kultur</h3>
+          <p>Transparenz, Fokus & respektvolle Feedback-Loops.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Jobs -->
+    <section id="jobs" class="section" aria-labelledby="jobs-heading">
+      <div class="section-head">
+        <h2 id="jobs-heading">Offene Stellen</h2>
+        <form class="job-filter" role="search" aria-label="Job Filter">
+          <label class="visually-hidden" for="job-search">Jobtitel oder Stichwort</label>
+            <input id="job-search" type="search" placeholder="Suche nach Titel, Skill …">
+          <select id="job-location" aria-label="Standort">
+            <option value="">Standort</option>
+            <option value="remote">Remote</option>
+            <option value="berlin">Berlin</option>
+            <option value="wuppertal">Wuppertal</option>
+          </select>
+          <select id="job-dept" aria-label="Bereich">
+            <option value="">Bereich</option>
+            <option value="engineering">Engineering</option>
+            <option value="design">Design</option>
+            <option value="product">Product</option>
+          </select>
+          <button type="button" id="filter-reset" class="btn tiny ghost">Reset</button>
+        </form>
+      </div>
+
+      <ul class="job-grid" id="job-grid" aria-live="polite">
+        <li class="job-card" data-location="remote" data-dept="engineering">
+          <article>
+            <header>
+              <h3><a href="#bewerben">Full-Stack Engineer (m/w/d)</a></h3>
+              <p class="meta"><span>Remote (DE)</span> · <span>Vollzeit</span></p>
+            </header>
+            <p>Baue skalierbare Features (Node.js, TypeScript, React) & verbessere DX.</p>
+            <ul class="tags">
+              <li>TypeScript</li><li>Node</li><li>React</li>
+            </ul>
+          </article>
+        </li>
+        <li class="job-card" data-location="berlin" data-dept="product">
+          <article>
+            <header>
+              <h3><a href="#bewerben">Product Manager SaaS (m/w/d)</a></h3>
+              <p class="meta"><span>Berlin Hybrid</span> · <span>Vollzeit</span></p>
+            </header>
+            <p>Definiere Roadmaps & orchestriere cross-funktionale Teams.</p>
+            <ul class="tags">
+              <li>Discovery</li><li>KPI</li><li>Strategy</li>
+            </ul>
+          </article>
+        </li>
+        <li class="job-card" data-location="remote" data-dept="design">
+          <article>
+            <header>
+              <h3><a href="#bewerben">Senior UI / UX Designer (m/w/d)</a></h3>
+              <p class="meta"><span>Remote (EU)</span> · <span>Voll-/Teilzeit</span></p>
+            </header>
+            <p>Gestalte Design-Systeme und produktive Userflows mit hohem Finish.</p>
+            <ul class="tags">
+              <li>Figma</li><li>Design System</li><li>Prototyping</li>
+            </ul>
+          </article>
+        </li>
+      </ul>
+
+      <div class="jobs-footer">
+        <p>Nichts dabei?</p>
+        <a class="btn ghost tiny" href="#bewerben">Initiativbewerbung</a>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section" aria-labelledby="team-heading">
+      <h2 id="team-heading">Unser Team</h2>
+      <div class="team-grid">
+        <figure class="team-person">
+          <img src="https://via.placeholder.com/220x220.png?text=Anna" alt="Anna – Engineering Lead" loading="lazy">
+          <figcaption><strong>Anna</strong><span>Engineering Lead</span></figcaption>
+        </figure>
+        <figure class="team-person">
+          <img src="https://via.placeholder.com/220x220.png?text=Rashid" alt="Rashid – Product Manager" loading="lazy">
+          <figcaption><strong>Rashid</strong><span>Product Manager</span></figcaption>
+        </figure>
+        <figure class="team-person">
+          <img src="https://via.placeholder.com/220x220.png?text=Lea" alt="Lea – UX Designerin" loading="lazy">
+          <figcaption><strong>Lea</strong><span>UX Designerin</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Bewerbung -->
+    <section id="bewerben" class="section" aria-labelledby="bewerben-heading">
+      <h2 id="bewerben-heading">Jetzt bewerben</h2>
+      <p class="intro">Schick uns deine Bewerbung auf eine konkrete Rolle oder initiativ. Wir melden uns schnell.</p>
+
+      <form action="/api/bewerbung" method="POST" class="apply-form" enctype="multipart/form-data" novalidate>
+        <fieldset>
+          <legend>Persönliche Daten</legend>
+          <div class="field">
+            <label for="fname">Vorname *</label>
+            <input id="fname" name="first_name" required autocomplete="given-name">
+          </div>
+            <div class="field">
+              <label for="lname">Nachname *</label>
+              <input id="lname" name="last_name" required autocomplete="family-name">
+            </div>
+            <div class="field">
+              <label for="email">E-Mail *</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="phone">Telefon (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bewerbung</legend>
+          <div class="field">
+            <label for="role">Rolle</label>
+            <select id="role" name="role">
+              <option value="">Allgemein / Initiativ</option>
+              <option value="fullstack">Full-Stack Engineer</option>
+              <option value="pm">Product Manager</option>
+              <option value="ux">UI / UX Designer</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="motivation">Motivation *</label>
+            <textarea id="motivation" name="motivation" rows="5" required placeholder="Erzähl uns kurz, warum du zu uns willst …"></textarea>
+          </div>
+          <div class="field">
+            <label for="cv">Lebenslauf (PDF, max. 5MB) *</label>
+            <input id="cv" name="cv" type="file" accept="application/pdf" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Einverständnis</legend>
+          <div class="check">
+            <input id="privacy" name="privacy" type="checkbox" required>
+            <label for="privacy">Ich stimme der Verarbeitung meiner Daten gemäß Datenschutzerklärung zu.</label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="hint">* Pflichtfelder</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>NovaWork</h3>
+        <p>Wir bauen skalierbare Produkte mit Fokus auf Nutzererlebnis & Qualität.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul class="plain">
+          <li><a href="mailto:karriere@novawork.example">karriere@novawork.example</a></li>
+          <li>Berlin · Remote</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul class="plain">
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> NovaWork. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    // Jahr
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Navigation
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.getElementById('nav-list');
+    navToggle.addEventListener('click', () => {
+      const open = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!open));
+      navList.classList.toggle('open');
+    });
+
+    // Filterlogik
+    const searchInput = document.getElementById('job-search');
+    const deptSelect = document.getElementById('job-dept');
+    const locSelect = document.getElementById('job-location');
+    const resetBtn = document.getElementById('filter-reset');
+    const cards = Array.from(document.querySelectorAll('.job-card'));
+
+    function filterJobs() {
+      const term = searchInput.value.toLowerCase().trim();
+      const dept = deptSelect.value;
+      const loc = locSelect.value;
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const okTerm = !term || text.includes(term);
+        const okDept = !dept || card.dataset.dept === dept;
+        const okLoc = !loc || card.dataset.location === loc;
+        card.style.display = (okTerm && okDept && okLoc) ? '' : 'none';
+      });
+    }
+    [searchInput, deptSelect, locSelect].forEach(el => el.addEventListener('input', filterJobs));
+    resetBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      deptSelect.value = '';
+      locSelect.value = '';
+      filterJobs();
+    });
+  </script>
+</body>
+</html>
