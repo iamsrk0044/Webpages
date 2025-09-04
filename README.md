@@ -1,7 +1,7 @@
 Über das Projekt 
 
 Zum Besuchen einfach auf den Link klicken:
-https://iamsrk0044.github.io/Webpages/
+https://iamsrk0044.github.io/Webseite/
 
 Dieses Projekt ist eine einfache Webseite, die ich entwickelt habe, um meine grundlegenden Fähigkeiten in der Webentwicklung zu festigen und aufzufrischen. Das Ziel war, eine funktionale statische Seite von Grund auf neu zu erstellen. Es handelt sich um ein persönliches Hobbyprojekt, das keine kommerziellen Zwecke verfolgt.
 
